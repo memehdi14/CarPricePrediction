@@ -59,5 +59,5 @@ This project uses a **K-Nearest Neighbors (KNN)** regression model trained on th
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/car-price-estimator.git
-   cd car-price-estimator
+   git clone https://github.com/memehdi14/carpriceprediction.git
+   cd carpriceprediction

@@ -59,5 +59,57 @@ This project uses a **K-Nearest Neighbors (KNN)** regression model trained on th
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/memehdi14/carpriceprediction.git
-   cd carpriceprediction
+   git clone https://github.com/memehdi14/carpricepredictor.git
+   cd carpricepredictor
+   ```
+
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Ensure the following files are present**:
+   - `knn_car_price_model.pkl`
+   - `scaler.pkl`
+   - `label_encoders.pkl`
+
+4. **Run the app**
+   ```bash
+   streamlit run predictor.py
+   ```
+
+---
+
+## 🖥️ UI Overview
+
+- Select car **brand** and **model**
+- Choose **vehicle age** using a slider
+- Input **kilometers driven**
+- Click “Estimate Price” to see results
+
+> ✅ Example Output:  
+> Estimated Price: ₹4,50,000.00
+
+---
+
+## 📂 Project Structure
+
+```
+├── predictor.py                   # Streamlit application script
+├── Final_CPP_Model_Simplified.ipynb  # Jupyter Notebook for model training
+├── cardekho_dataset.csv          # Cleaned dataset
+├── knn_car_price_model.pkl       # Trained KNN model (external)
+├── scaler.pkl                    # Scaler used in preprocessing (external)
+├── label_encoders.pkl            # Encoders for brand/model (external)
+└── README.md                     # Project description
+```
+
+---
+
+## 📬 Future Improvements
+
+- Add more features like fuel type, transmission, owner type
+- Host on Streamlit Cloud or HuggingFace Spaces
+- Integrate model selection and comparison (KNN vs Random Forest etc.)
+
+---
